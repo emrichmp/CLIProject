@@ -21,7 +21,7 @@ class CommandLineInterface
         puts "type 1 for specific rank or 0 for top 100"
         input = gets.strip.to_i
         if input == 1
-            puts "what rank?"
+            puts "what rank? Enter a number between 1-100."
             input2 = gets.strip.to_i
             if input2 > 100 || input2 < 1
                 puts "Please try again and enter a valid input"
