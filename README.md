@@ -1,13 +1,11 @@
-# CLIProject
+# Worlds Best Male Tennis Players
 
-Worlds Best Male Tennis Players
+This Ruby GEM will provide information on who the top 10 tennis players are and the info on them.
 
-This program will provide information on who the top 10 tennis players are and the info on them.
+## Installation
+    #Insert installation here
 
-Installation
-#Insert installation here
-
-Usage
+## Usage
 Program will ask you what you want...
 Specific Player? or Top 10? - 1 for Specific option or 0 for Top 10
     Specific Player will ask for a rank and then will output the data for that player
@@ -15,8 +13,8 @@ Specific Player? or Top 10? - 1 for Specific option or 0 for Top 10
 User will be asked if we want to go again - 1 for yes, 0 for no.
     If yes than the program will restart, if no the program will leave a conluding message
 
-Development
+## Development
 This program was developed as a project for the FlatIron School curriculum.
 
-License
+## License
 This gem is available as open source under the terms of the MIT License. See in "LICENSE.txt"
