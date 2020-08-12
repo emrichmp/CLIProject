@@ -1,6 +1,3 @@
-require 'nokogiri'
-require 'open-uri'
-
 # Scrapes data from ATP website
 
 class Scraper
@@ -10,7 +7,7 @@ class Scraper
     URL = "https://www.atptour.com/en/rankings/singles"
 
     def scrape_and_assign()
-        html = open(URL)
+        html = URI.open(URL)
         data = Nokogiri::HTML(html)
         ranks = data.css(".rank-cell").text
         ranks = ranks.split

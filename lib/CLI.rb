@@ -13,6 +13,7 @@ class CommandLineInterface
         players = Player.new
         players.create_players(ranks, names)
         @allplayers = players.all
+        @allplayers.shift()
     end
 
     def start
@@ -28,7 +29,7 @@ class CommandLineInterface
                 self.start
             else
                 puts "This is the player data for rank #{input2}"
-                specific_player = @allplayers[input2]
+                specific_player = @allplayers[input2-1]
                 puts "Name: #{specific_player.name}, ATP ranking: #{specific_player.rank}"
             end
         elsif input == 0
@@ -46,7 +47,7 @@ class CommandLineInterface
         cycle = 1
         while cycle == 1
             self.start
-            puts "Do you want to go again? 1 for yes, 0 for no."
+            puts "Do you want to go again? 1 for yes, any key to exit"
             cycle = gets.strip.to_i
         end
         puts "Thank you for using this program! I hope you learned more about the top male tennis players!"
