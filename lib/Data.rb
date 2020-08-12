@@ -4,8 +4,8 @@ require 'open-uri'
 # Scrapes data from ATP website
 
 class Scraper
-    @name_array = []
-    @rank_array = []
+    @@name_array = []
+    @@rank_array = []
 
     URL = "https://www.atptour.com/en/rankings/singles"
 
@@ -16,17 +16,25 @@ class Scraper
         ranks = ranks.split
         name = data.css(".player-cell").text
         name = name.split
-        @name_array = name
-        while @name_array.length > 100
-            @name_array.pop
+        @@name_array = name
+        while @@name_array.length > 100
+            @@name_array.pop
         end
-        @rank_array = ranks
+        @@rank_array = ranks
         # puts "#{@name_array}"
         # puts "#{@rank_array}"
     end
-    @name_array
-    @rank_array
+
+    def names
+        @@name_array
+    end
+
+    def ranks
+        @@rank_array
+    end
+
 end
 
-# s = Scraper.new
-# s.scrape_and_assign
+s = Scraper.new
+s.scrape_and_assign
+s.names
