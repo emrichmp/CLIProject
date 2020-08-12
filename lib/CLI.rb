@@ -30,9 +30,8 @@ class CommandLineInterface
             puts "Do you want to go again? 1 for yes, 0 for no."
             cycle = gets.strip.to_i
         end
-
+        puts "Thank you for using this program! I hope you learned more about tennis!"
     end
-
 end
 
 CLI = CommandLineInterface.new
