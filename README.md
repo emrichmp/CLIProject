@@ -10,10 +10,10 @@ This Ruby GEM will provide information on who the top 10 tennis players are and 
 
 ## Usage
 Program will ask you what you want...
-Specific Player? or Top 10? - 1 for Specific option or 0 for Top 10.
+Specific Player? or Top 100? - 1 for Specific option or 0 for Top 100.
     Specific Player will ask for a rank and then will output the data for that player.
-    Top 10 will put out Top 10 Players in the rankings and their data.
-User will be asked if we want to go again - 1 for yes, 0 for no.
+    Top 100 will put out Top 100 Players in the rankings and their data.
+User will be asked if we want to go again - 1 for yes, any key to exit.
     If yes than the program will restart, if no the program will leave a conluding message.
 
 ## Development
