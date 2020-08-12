@@ -8,13 +8,10 @@ class CommandLineInterface
         puts "Welcome to the top 100 ATP Tennis Players!"
         playerdata = Scraper.new
         names = playerdata.names
-        # puts "#{names}"
         ranks = playerdata.ranks
-        # puts "#{ranks}"
         players = Player.new
         players.create_players(ranks, names)
         @allplayers = players.all
-        #puts "#{@allplayers}"
     end
 
     def start
@@ -27,12 +24,11 @@ class CommandLineInterface
             input2 = gets.strip.to_i
             puts "This is the player data for rank #{input2}"
             specific_player = @allplayers[input2]
-            puts "#{specific_player.name} #{specific_player.rank}"
+            puts "Name: #{specific_player.name}, ATP ranking: #{specific_player.rank}"
         else 
             puts "This is the player data for the top 100 players"
-            #diplay top 10 data here w/ each iteration
             @allplayers.each do |player|
-                
+                puts "Name: #{player.name}, ATP ranking: #{player.rank}"
             end
         end
     end
@@ -47,8 +43,3 @@ class CommandLineInterface
         puts "Thank you for using this program! I hope you learned more about tennis!"
     end
 end
-
-# CLI = CommandLineInterface.new
-# CLI.call
-# #CLI.start
-# CLI.run
