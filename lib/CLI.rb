@@ -7,6 +7,7 @@ class CommandLineInterface
     def call
         puts "Welcome to the top 100 ATP Tennis Players!"
         playerdata = Scraper.new
+        playerdata.scrape_and_assign
         names = playerdata.names
         ranks = playerdata.ranks
         players = Player.new
@@ -28,7 +29,7 @@ class CommandLineInterface
         else 
             puts "This is the player data for the top 100 players"
             @allplayers.each do |player|
-                puts "Name: #{player.name}, ATP ranking: #{player.rank}"
+                puts "name: #{player.name}, ATP ranking: #{player.rank}"
             end
         end
     end
