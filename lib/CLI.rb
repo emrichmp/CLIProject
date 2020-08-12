@@ -23,14 +23,22 @@ class CommandLineInterface
         if input == 1
             puts "what rank?"
             input2 = gets.strip.to_i
-            puts "This is the player data for rank #{input2}"
-            specific_player = @allplayers[input2]
-            puts "Name: #{specific_player.name}, ATP ranking: #{specific_player.rank}"
-        else 
+            if input2 > 100 || input2 < 1
+                puts "Please try again and enter a valid input"
+                self.start
+            else
+                puts "This is the player data for rank #{input2}"
+                specific_player = @allplayers[input2]
+                puts "Name: #{specific_player.name}, ATP ranking: #{specific_player.rank}"
+            end
+        elsif input == 0
             puts "This is the player data for the top 100 players"
             @allplayers.each do |player|
                 puts "name: #{player.name}, ATP ranking: #{player.rank}"
             end
+        else
+            puts "Please try again and enter a valid input"
+            self.start
         end
     end
 
@@ -41,6 +49,6 @@ class CommandLineInterface
             puts "Do you want to go again? 1 for yes, 0 for no."
             cycle = gets.strip.to_i
         end
-        puts "Thank you for using this program! I hope you learned more about tennis!"
+        puts "Thank you for using this program! I hope you learned more about the top male tennis players!"
     end
 end
