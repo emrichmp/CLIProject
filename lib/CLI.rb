@@ -17,8 +17,7 @@ class CommandLineInterface
     end
 
     def start
-        puts ""
-        puts "Do you want to see the details on a specific rank or the details of top 100?"
+        puts "\nDo you want to see the details on a specific rank or the details of top 100?"
         puts "type 1 for specific rank or 0 for top 100"
         input = gets.strip.to_i
         if input == 1
