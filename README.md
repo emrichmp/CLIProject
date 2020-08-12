@@ -3,7 +3,9 @@
 This Ruby GEM will provide information on who the top 10 tennis players are and the info on them.
 
 ## Installation
-    #Insert installation here
+    1. Clone this repository
+    2. CD into this folder
+    3. run "ruby ./bin/run"
 
 ## Usage
 Program will ask you what you want...
