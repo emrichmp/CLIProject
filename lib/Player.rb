@@ -1,4 +1,4 @@
-require 'pry'
+#Class for Player instances
 
 class Player
     attr_accessor :rank, :name

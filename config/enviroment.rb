@@ -1,6 +1,6 @@
 require 'nokogiri'
 require 'open-uri'
 
-require_relative '../lib/Data.rb'
-require_relative '../lib/Player.rb'
-require_relative '../lib/CommandLineInterface'
+require_relative '../lib/Data'
+require_relative '../lib/Player'
+require_relative '../lib/CLI'

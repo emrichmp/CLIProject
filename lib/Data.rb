@@ -1,6 +1,8 @@
 require 'nokogiri'
 require 'open-uri'
 
+# Scrapes data from ATP website
+
 class Scraper
     @name_array = []
     @rank_array = []
@@ -18,6 +20,3 @@ class Scraper
         @rank_array = ranks
     end
 end
-
-# new = Scraper.new
-# Scraper.scrape_and_assign

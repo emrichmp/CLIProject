@@ -1,5 +1,6 @@
-# require_relative "./Data.rb"
-# require_relative "./Player.rb"
+# will run the CLI
+# create the array of instances of players
+# output data that is asked for
 
 class CommandLineInterface
     def initiliaze
