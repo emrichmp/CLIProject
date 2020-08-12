@@ -34,7 +34,7 @@ class CommandLineInterface
     end
 end
 
-CLI = CommandLineInterface.new
-CLI.call
-#CLI.start
-CLI.run
+# CLI = CommandLineInterface.new
+# CLI.call
+# #CLI.start
+# CLI.run
