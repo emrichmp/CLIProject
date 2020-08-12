@@ -21,10 +21,12 @@ class Scraper
             @name_array.pop
         end
         @rank_array = ranks
-        puts "#{@name_array}"
-        puts "#{@rank_array}"
+        # puts "#{@name_array}"
+        # puts "#{@rank_array}"
     end
+    @name_array
+    @rank_array
 end
 
-s = Scraper.new
-s.scrape_and_assign
+# s = Scraper.new
+# s.scrape_and_assign

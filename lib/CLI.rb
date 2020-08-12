@@ -5,6 +5,8 @@
 class CommandLineInterface
     def call
         puts "Welcome to the top 100 ATP Tennis Players!"
+        # Data = Scraper.new
+        # puts "#{Data}"
     end
 
     def start
