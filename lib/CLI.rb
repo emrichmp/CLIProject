@@ -34,7 +34,7 @@ class CommandLineInterface
         elsif input == 0
             puts "This is the player data for the top 100 players"
             @allplayers.each do |player|
-                puts "name: #{player.name}, ATP ranking: #{player.rank}"
+                puts "Name: #{player.name}, ATP ranking: #{player.rank}"
             end
         else
             puts "Please try again and enter a valid input"
