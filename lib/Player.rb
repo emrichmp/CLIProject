@@ -10,11 +10,11 @@ class Player
         @@all << self
     end
 
-    def all
+    def self.all
         @@all
     end
 
-    def create_players(rank_array, name_array)
+    def self.create_players(rank_array, name_array)
         rank_array.zip(name_array).each do |rank, name|
             player = Player.new(rank, name)
         end

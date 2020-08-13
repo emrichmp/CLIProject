@@ -2,6 +2,8 @@
 # create the array of instances of players
 # output data that is asked for
 
+#add to technical things to blog
+
 class CommandLineInterface
     @allplayers = []
     def call
@@ -10,10 +12,11 @@ class CommandLineInterface
         playerdata.scrape_and_assign
         names = playerdata.names
         ranks = playerdata.ranks
-        players = Player.new
-        players.create_players(ranks, names)
-        @allplayers = players.all
-        @allplayers.shift()
+        # players = Player.new
+        Player.create_players(ranks, names)
+        @allplayers = Player.all
+        #@allplayers.shift()
+        #self.run
     end
 
     def start
